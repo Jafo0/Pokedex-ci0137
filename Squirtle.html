@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <header id="#007 Squirtle">
-        <img src="/assets/squirtle-grande.png" width="300" height="300">
-        <h2>Squirtle el Mejor</h2>
-        
 
-    </header>
-    <section>
-        <h2>Descripcion</h2>  
+<head id="#007 Squirtle">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <h2> Pokemon Squirtle</h2>
 
-    </section>
+    <link rel="icon" type="image/svg+xml" href="assets/pokeball.svg">
+    <link rel="icon" type="image/png" href="assets/pokeball.png">
+
+</head>
+
+<header>
+    <p>
+        <a class="logo" href="./">
+            <img src="assets/logo-pokedex.svg" alt="Pokédex" width="156" height="40">
+        </a>
+    </p>
+    <nav>
+        <ul>
+            <li><a href="./" accesskey="p">Pokédex</a></li>
+            <li><a href="perfil-entrenador.html">Perfil de entrenador</a></li>
+            <li><a href="acerca-de.html">Acerca de</a></li>
+            <li><a href="configuracion.html">Configuración</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <nav id="indice-ficha">
+        <ul>
+          <li><a href="#detalles">Detalles</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#estadisticas">Estadísticas</a></li>
+        </ul>
+    </nav>
+    <figure>
+            <img src="assets/squirtle-grande.png" alt="Squirtle, un Pokémon de tipo Agua con caparazón de tortuga"
+            width="300" height="300">
+            <figcaption>Squirtle la tortuga</figcaption>
+    </figure>
+
+
     <section id = "detalles"> 
         <h2>Detalles</h2>
         <dl> 
@@ -20,25 +52,70 @@
             <dt> Tipo </dt>
             <dd> Agua</dl>
         </dl>
+        <h3>Cadena evolutiva</h3>
+            <ol>
+            <li>Squirtle</li>
+            <li>Wartortle</li>
+            <li>Blastoise</li>
+            </ol>
     </section>
+    <section id="habilidades">
+            <h2>Habilidades</h2>
+
+            <dl>
+            <dt>Torrente</dt>
+            <dd>Potencia sus movimientos de tipo Agua cuando le queda poca salud.</dd>
+
+            <dt>Cura Lluvia <em>(oculta)</em></dt>
+            <dd>Recupera salud en cada turno mientras esté lloviendo en el combate.</dd>
+            </dl>
+      </section>
+
+      <section id="estadisticas">
+        <h2>Estadísticas</h2>
+
+        <table class="stats-table">
+          <caption>Estadísticas base de Squirtle</caption>
+
+          <thead>
+            <tr>
+              <th abbr="PS">Puntos de Salud</th>
+              <th abbr="ATQ">Ataque</th>
+              <th abbr="DEF">Defensa</th>
+              <th abbr="AT. ESP.">Ataque Especial</th>
+              <th abbr="DEF. ESP.">Defensa Especial</th>
+              <th abbr="VEL">Velocidad</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>44</td>
+              <td>48</td>
+              <td>65</td>
+              <td>50</td>
+              <td>64</td>
+              <td>43</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr class="stats-table__total">
+              <td colspan="6">Total: 314</td>
+            </tr>
+          </tfoot>
+        </table>
     </section>
-
-    <>
-
+</main>
 
 
-
-
-
-
-
-    <footer>
-        <p>
-            <small> Proyecto académico UCR Apps Web 
-            (<abbr title="Curso desarrollo de apps web"> CI-0137</abbr>), 
-            de la Escuela de Ciencias de Computacion e Informatica,
-             <abbr title="UCR"> UCR, 2026</abbr></small>
-        </p>
-    </footer>
+<footer>
+    <p>
+        <small> Proyecto académico UCR Apps Web 
+        (<abbr title="Curso desarrollo de apps web"> CI-0137</abbr>), 
+        de la Escuela de Ciencias de Computacion e Informatica,
+            <abbr title="UCR"> UCR, 2026</abbr></small>
+    </p>
+</footer>
 
 </html>
