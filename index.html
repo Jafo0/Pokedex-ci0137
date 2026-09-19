@@ -10,50 +10,124 @@
 
     <nav>   
         <ul>
-            <li><a href="Perfil-entrenador.html">Pokedex</a></li>
+            <li><a href="Perfil-entrenador.html">Perfil de Entrenador</a></li>
             <li><a href="Acerca De.html">Acerca de</a></li>
-            <li><a href="Config.html">Config</a></li>
+            <li><a href="Config.html">Configuraciones</a></li>
             <li><a href="https://play.cplegacy.com/" target="_blank" rel = "noopener">Diversion en la ECCI</a></li>
-
-
-        </ul>
-    </nav>
-    <section Id=" buscador">
-        <h2> Buscar y filtrar </h2>
-        <!--- No se como hacerlo aun -->
-
-    </section>
-
-
-    <section id = "Main Menu"> 
-        <h1>Lista Pokemones</h1>
-        <nav>   
-        <ul>
-             <li>
-                <img src="/assets/bulbasaur.png">
-                <a href="Bulbasaur.html">#001 Bulbasaur</a></li>
-             <li>
-                <img src="/assets/ivysaur.png">
-                <a href="Ivysour.html">#002 Ivysour</a></li>
-             <li>
-                <img src="/assets/venusaur.png">
-                <a href="venusaur.html">#003 Venusaur</a></li>
-             <li>
-                <img src="/assets/charmander.png">
-                <a href="charmander.html">#004 charmander</a></li>
-            <li>
-                <img src="/assets/charmeleon.png">
-                <a href="charmeleon.html">#005 charmeleon</a></li>
-             <li>
-                <img src="/assets/charizard.png">
-                <a href="charizard.html">#006 charizard</a></li>
-             <li>
-                <img src="/assets/squirtle.png">
-                <a href="Squirtle.html">#007 Squirtle</a></li>
+             <style>
+                
+             .pokemon-card{ 
+                
+                background-color: azure;
+                margin: 5px;
+                border-radius: 5px;
+             }
+             </style>
 
         </ul>
     </nav>
+
+    <section id="buscador">
+        <h2>Buscar y filtrar</h2>
+        <p>Buscar por nombre o filtrAR por tipo para encontrar un Pokémon más rápido.</p>
+
+        <search>
+            <form class="buscador" action="./" method="get">
+            <fieldset>
+                <legend>Criterios de búsqueda</legend>
+
+                <label for="nombre">Nombre</label>
+                <input type="search" id="nombre" name="nombre">
+
+                <label for="tipo">Tipo</label>
+                <select id="tipo" name="tipo">
+
+                    <option value="">Todos los tipos</option>
+                    <option value="planta">Planta</option>
+                    <option value="fuego">Fuego</option>
+                    <option value="agua">Agua</option>
+                    <option value="electrico">Eléctrico</option>
+                    <option value="veneno">Veneno</option>
+                    <option value="volador">Volador</option>
+                </select>
+
+                <label for="orden">Ordenar por</label>
+                <select id="orden" name="orden">
+                    <option value="numero-asc" selected>Número (menor a mayor)</option>
+                    <option value="numero-desc">Número (mayor a menor)</option>
+                    <option value="nombre-asc">Nombre (A-Z)</option>
+                    <option value="nombre-desc">Nombre (Z-A)</option>
+                    <option value="tamano-desc">Tamaño (más alto primero)</option>
+                    <option value="tamano-asc">Tamaño (más bajo primero)</option>
+                </select>
+
+                <button type="submit">Buscar</button>
+                <button type="reset">Limpiar</button>
+
+                <p>
+                    <input type="checkbox" id="solo-capturados" name="solo-capturados" value="si">
+                    <label for="solo-capturados">Mostrar solo los que ya capturé</label>
+                </p>
+
+                <fieldset>
+                    <legend>Etapa evolutiva</legend>
+
+                    <input type="radio" id="etapa-todas" name="etapa" value="todas" checked>
+                    <label for="etapa-todas">Todas</label>
+
+                    <input type="radio" id="etapa-inicial" name="etapa" value="inicial">
+                    <label for="etapa-inicial">Solo formas iniciales</label>
+
+                    <input type="radio" id="etapa-final" name="etapa" value="final">
+                    <label for="etapa-final">Solo formas finales</label>
+                </fieldset>
+            </fieldset>
+            </form>
+        </search>
     </section>
+
+   
+    <section id="lista-pokemon">
+    <h2>Lista Pokemones</h2>
+    <ul class="pokemon-list">
+        <li class="pokemon-card">
+            <img src="assets/bulbasaur.png" alt="Sprite de Bulbasaur" width="96" height="96" class="pokemon-card__image">
+            <span class="pokemon-card__number">#001</span>
+            <a href="bulbasaur.html" class="pokemon-card__name">Bulbasaur</a>
+        </li>
+        <li class="pokemon-card">
+            <img src="assets/ivysaur.png" alt="Sprite de Ivysaur" width="96" height="96" class="pokemon-card__image">
+            <span class="pokemon-card__number">#002</span>
+            <a href="ivysaur.html" class="pokemon-card__name">Ivysaur</a>
+        </li>
+        <li class="pokemon-card">
+            <img src="assets/venusaur.png" alt="Sprite de Venusaur" width="96" height="96" class="pokemon-card__image">
+            <span class="pokemon-card__number">#003</span>
+            <a href="venusaur.html" class="pokemon-card__name">Venusaur</a>
+        </li>
+        <li class="pokemon-card">
+            <img src="assets/charmander.png" alt="Sprite de Charmander" width="96" height="96" class="pokemon-card__image">
+            <span class="pokemon-card__number">#004</span>
+            <a href="charmander.html" class="pokemon-card__name">Charmander</a>
+        </li>
+        <li class="pokemon-card">
+            <img src="assets/charmeleon.png" alt="Sprite de Charmeleon" width="96" height="96" class="pokemon-card__image">
+            <span class="pokemon-card__number">#005</span>
+            <a href="charmeleon.html" class="pokemon-card__name">Charmeleon</a>
+        </li>
+        <li class="pokemon-card">
+            <img src="assets/charizard.png" alt="Sprite de Charizard" width="96" height="96" class="pokemon-card__image">
+            <span class="pokemon-card__number">#006</span>
+            <a href="charizard.html" class="pokemon-card__name">Charizard</a>
+        </li>
+        <li class="pokemon-card">
+            <img src="assets/squirtle.png" alt="Sprite de Squirtle" width="96" height="96" class="pokemon-card__image">
+            <span class="pokemon-card__number">#007</span>
+            <a href="squirtle.html" class="pokemon-card__name">Squirtle</a>
+        </li>
+    </ul>
+    </section>
+
     <nav id=" paginacion">
         <ol> <!-- cuando importa el orden de paginacion-->
             <li>1</li>

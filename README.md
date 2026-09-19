@@ -36,3 +36,43 @@ tomados de [Pokémon Database](https://pokemondb.net/).
 Pokémon y sus personajes son marcas registradas de Nintendo, Game Freak y The
 Pokémon Company. Este proyecto no tiene ninguna relación con ellos y se usa
 únicamente con fines educativos, sin fines de lucro.
+
+
+
+--- 
+### Clase
+
+mostrar y ocultar info details, popover y dialog para bloquear todo lo demas
+
+<details>
+ <summary> lo que ve el user el tuitulo</summary>
+ <p> lo que esta dentro de detail</p>
+</details>
+
+se pueden tener varios details con mismo atrib name, al abrir uno cierra otros name="group-demo"
+
+pop over aparece encima de la pagina, el resto de la pagina hasta que da click encima
+
+selecciona bloque con div menudemo q lanza el popover
+<p>
+<button popovertarget="menudemo">Muestra aviso<>
+</p>
+ taambien puede tener pop over que solo cierran con boton 
+
+ dialog
+ se declara boton y se inica tipo button, se debe de declarar el command de despliegue de modal
+ <dialog id="name">
+
+En css se siguen los estilos en el orden que se agregan, se deben de respetar, sino sigue las reglas del ultimo duplicado,
+para clases tambien se pueden poner estilos.
+Se linkean como los svg.
+tambien con # para ids y sus estilos, ejemp #buscador{...}
+Orden de importancia de estilos, selector: id-> class-> elemento
+
+usar font family
+
+
+
+
+
+
